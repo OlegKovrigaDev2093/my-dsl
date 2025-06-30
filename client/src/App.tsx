@@ -1,4 +1,5 @@
 import { use } from "react";
+import SenderDSL from "./SenderDSL";
 
 const dataPromise = fetch("http://localhost:3000").then((res) =>
   res.json(),
@@ -9,8 +10,7 @@ const App = () => {
 
   return (
     <>
-      <h1>Hello World</h1>
-      <h2>{data.message}</h2>
+      <SenderDSL />
     </>
   );
 };
