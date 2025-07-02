@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
+    "@sinclair/typebox": "^0.34.37",
     "monaco-yaml": "^5.4.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -19,7 +20,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
-    "@sinclair/typebox": "^0.34.37",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",

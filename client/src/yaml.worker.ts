@@ -1,1 +1,1 @@
-// import "monaco-yaml/yaml.worker.ts";
+import "monaco-yaml/yaml.worker.js";

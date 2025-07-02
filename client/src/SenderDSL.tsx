@@ -21,12 +21,12 @@ const dslSchemaPromise = fetch(`${HOST}/dsl-schema`).then((res) => res.json());
 export const SenderDSL = () => {
   const [dsl, setDsl] = useState<string>("");
   const monaco = useMonaco();
-  const [result, setResults] = useState<unknown>([]);
+  const [result, setResults] = useState<unknown[]>([]);
 
   const dslSchema = use(dslSchemaPromise);
 
   const send = () => {
-    fetch(`${HOST}}/dsl`, {
+    fetch(`${HOST}/dsl`, {
       method: "POST",
       body: JSON.stringify({ dsl }),
       headers: {
