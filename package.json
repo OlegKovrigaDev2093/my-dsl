@@ -1,0 +1,25 @@
+{
+  "name": "my-dsl-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegKovrigaDev2093/my-dsl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegKovrigaDev2093/my-dsl/issues"
+  },
+  "homepage": "https://github.com/OlegKovrigaDev2093/my-dsl#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
